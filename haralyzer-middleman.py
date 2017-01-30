@@ -35,12 +35,12 @@ def get_results(poll_url):
 
 def post_har_data(har_url):
     """Post HAR file data to the REST API """
-        data = requests.get(har_url, auth=(USER_NAME, API_KEY))
-        r = requests.post(API_SERVER, data={'har_data': data.text})
-        r.raise_for_status()
+    data = requests.get(har_url, auth=(USER_NAME, API_KEY))
+    r = requests.post(API_SERVER, data={'har_data': data.text})
+    r.raise_for_status()
 
 
-def main()
+def main():
     test_data = create_test("https://google.com")
     test_results = get_results(test_data['poll_state_url'])
     while not test_results:
