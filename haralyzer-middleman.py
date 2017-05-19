@@ -11,7 +11,6 @@ GT_METRIX_API_KEY = os.environ.get('GT_METRIX_API_KEY')
 # Default Base URL is set to GTMetrix API
 BASE_URL = os.environ.get('BASE_URL', 'https://gtmetrix.com/api/0.1/test')
 # REST API That data will be posted to!
-# API_SERVER = 'http://205.186.162.214:5000/tests/'
 API_SERVER = os.environ.get('API_SERVER' 'http://localhost:5000/api/')
 
 
